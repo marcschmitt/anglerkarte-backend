@@ -1,0 +1,62 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ways",
+  "info": {
+    "singularName": "way",
+    "pluralName": "ways",
+    "displayName": "Way",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "water": {
+      "type": "enumeration",
+      "enum": [
+        "Saar",
+        "Mosel"
+      ]
+    },
+    "side": {
+      "type": "enumeration",
+      "enum": [
+        "right",
+        "left"
+      ]
+    },
+    "from_km": {
+      "type": "decimal"
+    },
+    "to_km": {
+      "type": "decimal"
+    },
+    "nodes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "node.node"
+    },
+    "permission": {
+      "type": "enumeration",
+      "enum": [
+        "allowed",
+        "forbidden",
+        "temporarilyNotPossible",
+        "limitedPossible",
+        "notPossible"
+      ]
+    },
+    "description": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Hafen",
+        "Flachwasserzone",
+        "Ufer"
+      ]
+    }
+  }
+}

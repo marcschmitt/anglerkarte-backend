@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_node_nodes",
+  "info": {
+    "displayName": "node",
+    "icon": "map-marker-alt"
+  },
+  "options": {},
+  "attributes": {
+    "lat": {
+      "type": "float"
+    },
+    "long": {
+      "type": "float"
+    }
+  }
+}

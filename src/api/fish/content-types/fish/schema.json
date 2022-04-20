@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fishes",
+  "info": {
+    "singularName": "fish",
+    "pluralName": "fishes",
+    "displayName": "Fish",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "latin_name": {
+      "type": "string"
+    },
+    "fishing_ban": {
+      "type": "boolean",
+      "required": true
+    },
+    "minimum_size": {
+      "type": "integer"
+    },
+    "no_fish": {
+      "type": "boolean"
+    },
+    "closed_season": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "markers",
+  "info": {
+    "singularName": "marker",
+    "pluralName": "markers",
+    "displayName": "Marker",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "harbor",
+        "shallowWaterZone",
+        "temporarilyNotPossible",
+        "boatDock",
+        "restricted"
+      ]
+    },
+    "node": {
+      "type": "component",
+      "repeatable": true,
+      "component": "node.node"
+    },
+    "from_km": {
+      "type": "decimal"
+    },
+    "to_km": {
+      "type": "decimal"
+    }
+  }
+}
